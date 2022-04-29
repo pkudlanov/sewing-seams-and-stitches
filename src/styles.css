@@ -1,0 +1,73 @@
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px);
+    opacity: .4;
+}
+
+.menu {
+    background-color: #ffffffe2
+}
+
+.bg-burgandy {
+    background-color: #a35559;
+}
+
+.c-item {
+    position: relative;
+}
+
+.c-bg {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+}
+
+.c-height {
+    height: 75vw;
+    max-height: 75vh;
+}
+
+.c-img {
+    height: 100%;
+    filter: blur(0px);
+}
+
+.brand-logo {
+    max-height: 100px;
+}
+
+.service-icon-container {
+    width: 6em;
+    height: 6em;
+}
+
+.service-icon {
+    width: 2.6em;
+}
+
+.entry {
+    display: grid;
+    grid-template-columns: auto max-content;
+    grid-template-areas: "service-name price";
+    align-items: end;
+    gap: 0 .25rem;
+}
+.service-name {
+    grid-area: service-name;
+    position: relative;
+    overflow: hidden;
+}
+.service-name::after {
+    position: absolute;
+    padding-left: .25ch;
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+    text-align: right;
+}
+.price {
+    grid-area: price;
+}
