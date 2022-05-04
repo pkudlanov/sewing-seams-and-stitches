@@ -15,6 +15,10 @@
     background-color: #a35559;
 }
 
+.col-burgandy {
+    color: #a35559;
+}
+
 .c-item {
     position: relative;
 }
@@ -70,4 +74,8 @@
 }
 .price {
     grid-area: price;
+}
+
+html {
+    scroll-padding-top: 5em;
 }
